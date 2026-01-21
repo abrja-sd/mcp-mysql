@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+        "mysql": {
+            "command": "/home/abr/Documents/GitHub/Python/mcp-mysql/venv/bin/python",
+            "args": [
+                "/home/abr/Documents/GitHub/Python/mcp-mysql/server.py",
+                "--transport",
+                "stdio"
+            ],
+            "env": {
+                "MYSQL_HOST": "localhost",
+                "MYSQL_USER": "user",
+                "MYSQL_PASSWORD": "password",
+                "MYSQL_DATABASE": "test_db",
+                "AUTH_TOKEN": "my-secret-token"
+            }
+        },
+        "mysql-http": {
+            "url": "http://localhost:8000/mcp",
+            "headers": {
+                "Authorization": "Bearer my-secret-token"
+            }
+        }
+    }
+}
