@@ -1,0 +1,11 @@
+{
+    "servers": {
+        "mysql-http": {
+            "url": "http://localhost:8000/mcp",
+            "headers": {
+                "Authorization": "Bearer my-secret-token"
+            },
+            "type": "http"
+        }
+    }
+}
